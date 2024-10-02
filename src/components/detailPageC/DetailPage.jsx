@@ -1,14 +1,13 @@
 import React from 'react'
 import TopLink from './TopLink';
-import FirstSection from './FirstSection';
-import SecondSection from './SecondSection';
+import MainP from './MainP';
+
 
 const DetailPage = () => {
   return (
   <div>
     <TopLink/>
-    <FirstSection />
-    <SecondSection />
+    <MainP />
 </div>
     )
 }

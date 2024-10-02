@@ -12,7 +12,7 @@ function App() {
     <Router>
     <Nav />
       <Routes>
-        <Route path="/" element={<HomePage />}>
+        <Route>
           <Route index element={<HomePage />} />
           <Route path="/detail" element={<DetailPage />} />
           <Route path="*" element={<PageNotFound />} />
