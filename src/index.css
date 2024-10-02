@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.input-area{
+    width: 60%;
+}
+.input-area input{
+    width: 80%;
+}
+.input-area:hover .search{
+    background-color: rgba(255, 166, 0, 0.658);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.icon-with-bg{
+    @apply flex px-2 py-1 rounded-full hover:bg-gray-200 mx-4 transition ease-out duration-200 items-center;
+}
+.outlined-btn{
+   @apply rounded-full border-2 border-black hover:bg-black hover:text-white transition ease-in duration-150;
+}
+
+.img-container{
+    position: relative;
 }

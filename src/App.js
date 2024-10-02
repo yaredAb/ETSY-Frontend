@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Filter from "./components/homePageC/Filter";
+import Items from "./components/homePageC/Items";
+import RecentUp from "./components/homePageC/RecentUp";
+import Special from "./components/homePageC/Special";
+import Nav from "./components/Nav";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav />
+      <main className="p-5">
+        <Special />
+        <Filter />
+        <RecentUp />
+        <Items />
+      </main>
     </div>
   );
 }
